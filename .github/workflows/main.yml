@@ -3,11 +3,7 @@
 name: Fentry Crate Claimer
 
 on:
-  # Allows you to run this workflow manually from the Actions tab for testing
   workflow_dispatch:
-
-  # Runs the workflow automatically on a schedule
-  # This cron schedule runs every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
   schedule:
     - cron: '0 */6 * * *'
 
@@ -16,27 +12,43 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # Checks out your repository's code so the script can be run
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # Sets up the Python environment
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # Installs the Playwright library
+      # --- NEW: Cache pip dependencies ---
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip # The directory where pip stores its cache
+          # The key identifies the cache. It includes the OS and a hash of the requirements file.
+          # If requirements.txt changes, the key changes, and a new cache is created.
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # --- NEW: Cache Playwright browsers ---
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright # The directory where Playwright stores browser binaries
+          # This key also depends on the requirements file, as a new Playwright version might need a new browser.
+          key: ${{ runner.os }}-playwright-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-playwright-
+
+      # --- UPDATED: Install dependencies using requirements.txt ---
       - name: Install dependencies
-        run: pip install playwright
+        run: pip install -r requirements.txt
           
-      # Installs the necessary browser (Chromium) and its system dependencies
       - name: Install Playwright browsers
         run: playwright install --with-deps chromium
 
-      # Runs your Python script
       - name: Run Crate Claimer Script
-        # This securely passes your GitHub Secret to the script as an environment variable
         env:
           FENTRY_SESSION_COOKIE: ${{ secrets.FENTRY_SESSION_COOKIE }}
         run: python main.py
