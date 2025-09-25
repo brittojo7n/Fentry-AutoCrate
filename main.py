@@ -15,7 +15,7 @@ def run_claimer(playwright):
 
     print("🚀 Starting the crate claimer script...")
     
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=True)
     context = browser.new_context()
 
     try:
