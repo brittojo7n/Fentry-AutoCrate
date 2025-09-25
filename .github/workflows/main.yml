@@ -1,0 +1,42 @@
+# .github/workflows/claim.yml
+
+name: Fentry Crate Claimer
+
+on:
+  # Allows you to run this workflow manually from the Actions tab for testing
+  workflow_dispatch:
+
+  # Runs the workflow automatically on a schedule
+  # This cron schedule runs every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  claim-crate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checks out your repository's code so the script can be run
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Sets up the Python environment
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Installs the Playwright library
+      - name: Install dependencies
+        run: pip install playwright
+          
+      # Installs the necessary browser (Chromium) and its system dependencies
+      - name: Install Playwright browsers
+        run: playwright install --with-deps chromium
+
+      # Runs your Python script
+      - name: Run Crate Claimer Script
+        # This securely passes your GitHub Secret to the script as an environment variable
+        env:
+          FENTRY_SESSION_COOKIE: ${{ secrets.FENTRY_SESSION_COOKIE }}
+        run: python main.py
