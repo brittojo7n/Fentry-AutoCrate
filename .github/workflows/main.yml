@@ -41,6 +41,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-playwright-
 
+      # --- UPDATED: Install dependencies using requirements.txt ---
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+          
+      - name: Install Playwright browsers
+        run: playwright install --with-deps chromium
+
       - name: Run Crate Claimer Script
         env:
           FENTRY_SESSION_COOKIE: ${{ secrets.FENTRY_SESSION_COOKIE }}
