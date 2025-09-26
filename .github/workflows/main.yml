@@ -5,7 +5,7 @@ name: Fentry Crate Claimer
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 00/6 * * *'
+    - cron: '0 00/7 * * *'
 
 jobs:
   claim-crate:
