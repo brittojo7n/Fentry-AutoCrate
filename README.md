@@ -1,8 +1,9 @@
-# FENTRY Auto Crate: Configuration Guide
+# FENTRY Auto Crate 
 
-This repository contains a pre-configured script and GitHub Actions workflow to automatically claim your free "Regular Crate" on fentry.org. To use it, you will first need to create your own copy of this repository.
+This repository contains a pre-configured script and GitHub Actions workflow to automatically claim your free "Regular Crate" on fentry.org. To use it, you will first need to create your own copy (**fork**) of this repository.
 
 ---
+
 ## How It Works
 
 The GitHub Actions workflow in this repository is scheduled to run automatically every six hours. It sets up a Python environment and executes the `main.py` script. The script uses a session cookie, which you will provide, to securely log in to your Fentry account and claim the crate if it's available.
