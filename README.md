@@ -6,7 +6,7 @@ This repository contains a pre-configured script and GitHub Actions workflow to 
 
 ## How It Works
 
-The GitHub Actions workflow in this repository is scheduled to run automatically every six hours. It sets up a Python environment and executes the `main.py` script. The script uses a session cookie, which you will provide, to securely log in to your Fentry account and claim the crate if it's available.
+The GitHub Actions workflow in this repository is scheduled to run automatically every seven hours, **not six hours since workflow actions can have delays at times and the next action can be on time causing it to try claiming before the timer is over**. It sets up a Python environment and executes the `main.py` script. The script uses a session cookie, which you will provide, to securely log in to your Fentry account and claim the crate if it's available.
 
 ---
 ## Setup and Configuration
