@@ -1,6 +1,4 @@
-# .github/workflows/claim.yml
-
-name: Fentry Crate Claimer
+name: Auto Crate
 
 on:
   workflow_dispatch:
@@ -20,28 +18,22 @@ jobs:
         with:
           python-version: '3.11'
 
-      # --- NEW: Cache pip dependencies ---
       - name: Cache pip packages
         uses: actions/cache@v4
         with:
-          path: ~/.cache/pip # The directory where pip stores its cache
-          # The key identifies the cache. It includes the OS and a hash of the requirements file.
-          # If requirements.txt changes, the key changes, and a new cache is created.
+          path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      # --- NEW: Cache Playwright browsers ---
       - name: Cache Playwright browsers
         uses: actions/cache@v4
         with:
-          path: ~/.cache/ms-playwright # The directory where Playwright stores browser binaries
-          # This key also depends on the requirements file, as a new Playwright version might need a new browser.
+          path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-playwright-
 
-      # --- UPDATED: Install dependencies using requirements.txt ---
       - name: Install dependencies
         run: pip install -r requirements.txt
           
