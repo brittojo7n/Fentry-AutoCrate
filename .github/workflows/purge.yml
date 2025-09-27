@@ -12,6 +12,6 @@ jobs:
         uses: jm-ber/delete-old-workflow-runs@v1
         with:
           repository: '${{ github.repository }}'
-          retain_days: 3
+          retain_days: 1
           delete_branch_ref: false
           delete_workflow_runs: true
