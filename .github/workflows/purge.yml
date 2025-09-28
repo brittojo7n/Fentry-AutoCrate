@@ -1,11 +1,17 @@
-name: Network Connectivity Test
-
+name: Purge Old Workflow Runs
 on:
+  schedule:
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
-  test-connection:
-    runs-on: ubuntu-latest # Or your self-hosted runner label
+  delete-old-runs:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
     steps:
-      - name: Check connection to GitHub
-        run: curl -v https://github.com
+      - name: Delete old workflow runs
+        uses: matt-ball/delete-old-workflow-runs@719262071f4961d15c829e0839e144a1e2b5e29f
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          retain_days: 1
