@@ -11,7 +11,7 @@ jobs:
       - name: Delete old workflow runs
         uses: jm-ber/delete-old-workflow-runs@v1
         with:
-          repository: '${{ github.repository }}'
+          repository: 'https://github.com/brittojo7n/Fentry-AutoCrate'
           retain_days: 1
           delete_branch_ref: false
           delete_workflow_runs: true
