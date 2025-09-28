@@ -11,7 +11,8 @@ jobs:
       actions: write
     steps:
       - name: Delete old workflow runs
-        uses: matt-ball/delete-old-workflow-runs@719262071f4961d15c829e0839e144a1e2b5e29f
+        uses: actions/delete-old-workflow-runs@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
           retain_days: 1
