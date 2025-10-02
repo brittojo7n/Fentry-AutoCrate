@@ -25,7 +25,7 @@ Click the **Fork** button at the top-right of this page. This will give you your
 
 Next, you need to get the session cookie that the script will use to authenticate.
 
-1.  Navigate to your Fentry dashboard at **`https://www.fentry.org/dashboard`** in your browser. If you aren't logged in, log in with your Discord account as you normally would.
+1.  Navigate to your [Fentry Dashboard](https://www.fentry.org/dashboard) in your browser. If you aren't logged in, log in with your Discord account as you normally would.
 2.  Once you are on your dashboard, press `F12` to open **Developer Tools**.
 3.  Navigate to the **Application** tab.
 4.  On the left-hand menu, expand the **Cookies** section and click on the URL for `https://www.fentry.org`.
