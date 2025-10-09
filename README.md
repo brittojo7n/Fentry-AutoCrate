@@ -1,6 +1,6 @@
 # Fentry Auto Crate 
 
-This repository contains a pre-configured script and GitHub Actions workflow to automatically claim your free "Regular Crate" on fentry.org. To use it, you will first need to create your own copy (**fork**) of this repository.
+This repository contains a pre-configured script and GitHub Actions workflow to automatically claim your free "Regular Crate" on fentry. To use it, you will first need to create your own copy (**fork**) of this repository.
 
 ---
 
