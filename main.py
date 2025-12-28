@@ -1,19 +1,37 @@
 import os
 import sys
+import datetime
 from playwright.sync_api import sync_playwright, TimeoutError
 
 SESSION_COOKIE_VALUE = os.environ.get("FENTRY_SESSION_COOKIE")
-
 COOKIE_NAME = "connect.sid"
 LOOTBOX_URL = "https://www.fentry.org/dashboard/lootboxes"
 CRATE_BUTTON_SELECTOR = 'button:has-text("Open Regular Crate")'
+LOG_FILE = "log.txt"
+
+def write_log(message):
+    """Write message to log file with timestamp"""
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_message = f"[{timestamp}] {message}"
+    
+    print(log_message)
+    
+    if 'logger_started' not in write_log.__dict__:
+        write_log.logger_started = True
+        with open(LOG_FILE, "w", encoding="utf-8") as f:
+            f.write(f"=== Crate Claimer Log ===\n")
+            f.write(f"Started: {timestamp}\n")
+            f.write("=" * 40 + "\n\n")
+    
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(log_message + "\n")
 
 def run_claimer(playwright):
     if not SESSION_COOKIE_VALUE:
         print("ERROR: The FENTRY_SESSION_COOKIE secret was not found.")
         sys.exit(1)
 
-    print("Starting the crate claimer script...")
+    write_log("Starting the crate claimer script...")
     
     browser = playwright.chromium.launch(headless=True)
     context = browser.new_context()
@@ -59,6 +77,10 @@ def run_claimer(playwright):
     finally:
         print(" shutting down.")
         browser.close()
+        write_log("Script execution completed.")
 
 with sync_playwright() as playwright:
     run_claimer(playwright)
+
+write_log("=" * 40)
+write_log(f"Script ended at: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
