@@ -13,7 +13,7 @@ def write_log(message):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_message = f"[{timestamp}] {message}"
     
-    write_log(log_message)
+    print(log_message)
     
     if 'logger_started' not in write_log.__dict__:
         write_log.logger_started = True
