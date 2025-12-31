@@ -1,8 +1,15 @@
 === Crate Claimer Log ===
-Started: 2025-12-28 17:12:31
+Started: 2025-12-31 19:56:31
 ========================================
 
-[2025-12-28 17:12:31] Starting the crate claimer script...
-[2025-12-28 17:12:38] Script execution completed.
-[2025-12-28 17:12:38] ========================================
-[2025-12-28 17:12:38] Script ended at: 2025-12-28 17:12:38
+[2025-12-31 19:56:31] Starting the crate claimer script...
+[2025-12-31 19:56:32] Injecting session cookie for authentication...
+[2025-12-31 19:56:32]  navigating to https://www.fentry.org/dashboard/lootboxes...
+[2025-12-31 19:56:37] Successfully authenticated and on the dashboard page.
+[2025-12-31 19:56:37] Looking for the 'button:has-text("Open Regular Crate")' button...
+[2025-12-31 19:56:37] Button is enabled! Clicking to claim crate...
+[2025-12-31 19:56:38] Success! Crate claimed. Waiting a bit to let the action complete.
+[2025-12-31 19:56:43]  shutting down.
+[2025-12-31 19:56:43] Script execution completed.
+[2025-12-31 19:56:43] ========================================
+[2025-12-31 19:56:43] Script ended at: 2025-12-31 19:56:43
