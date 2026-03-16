@@ -1,15 +1,12 @@
 === Crate Claimer Log ===
-Started: 2026-03-16 17:02:49
+Started: 2026-03-16 18:52:25
 ========================================
 
-[2026-03-16 17:02:49] Starting the crate claimer script...
-[2026-03-16 17:02:50] Injecting session cookie for authentication...
-[2026-03-16 17:02:50]  navigating to https://www.fentry.org/dashboard/lootboxes...
-[2026-03-16 17:03:20] Page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.fentry.org/dashboard/lootboxes", waiting until "load"
-
-[2026-03-16 17:03:21]  shutting down.
-[2026-03-16 17:03:21] Script execution completed.
-[2026-03-16 17:03:21] ========================================
-[2026-03-16 17:03:21] Script ended at: 2026-03-16 17:03:21
+[2026-03-16 18:52:25] Starting the crate claimer script...
+[2026-03-16 18:52:27] Injecting session cookie for authentication...
+[2026-03-16 18:52:27]  navigating to https://www.fentry.org/dashboard/lootboxes...
+[2026-03-16 18:52:33] Login failed! Redirected to https://www.fentry.org/signin. Please refresh your cookie.
+[2026-03-16 18:52:34]  shutting down.
+[2026-03-16 18:52:34] Script execution completed.
+[2026-03-16 18:52:34] ========================================
+[2026-03-16 18:52:34] Script ended at: 2026-03-16 18:52:34
