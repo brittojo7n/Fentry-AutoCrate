@@ -1,15 +1,14 @@
 === Crate Claimer Log ===
-Started: 2026-04-28 23:47:25
+Started: 2026-04-29 02:11:06
 ========================================
 
-[2026-04-28 23:47:25] Starting the crate claimer script...
-[2026-04-28 23:47:26] Injecting session cookie for authentication...
-[2026-04-28 23:47:26]  navigating to https://www.fentry.org/dashboard/lootboxes...
-[2026-04-28 23:47:56] Page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.fentry.org/dashboard/lootboxes", waiting until "load"
-
-[2026-04-28 23:47:56]  shutting down.
-[2026-04-28 23:47:56] Script execution completed.
-[2026-04-28 23:47:56] ========================================
-[2026-04-28 23:47:56] Script ended at: 2026-04-28 23:47:56
+[2026-04-29 02:11:06] Starting the crate claimer script...
+[2026-04-29 02:11:07] Injecting session cookie for authentication...
+[2026-04-29 02:11:08]  navigating to https://www.fentry.org/dashboard/lootboxes...
+[2026-04-29 02:11:14] Successfully authenticated and on the dashboard page.
+[2026-04-29 02:11:14] Looking for the 'button:has-text("Open Regular Crate")' button...
+[2026-04-29 02:11:14] Crate button not found on the page. The page layout might have changed or login failed.
+[2026-04-29 02:11:14]  shutting down.
+[2026-04-29 02:11:14] Script execution completed.
+[2026-04-29 02:11:14] ========================================
+[2026-04-29 02:11:14] Script ended at: 2026-04-29 02:11:14
