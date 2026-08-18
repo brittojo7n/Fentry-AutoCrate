@@ -1,16 +1,16 @@
 === Crate Claimer Log ===
-Started: 2026-08-18 15:23:19
+Started: 2026-08-18 17:20:30
 ========================================
 
-[2026-08-18 15:23:19] Starting the crate claimer script...
-[2026-08-18 15:23:21] Injecting session cookie for authentication...
-[2026-08-18 15:23:21] Navigating to https://www.fentry.org/dashboard/lootboxes...
-[2026-08-18 15:23:21] Waiting for page to fully render (networkidle)...
-[2026-08-18 15:23:27] Current URL: https://www.fentry.org/dashboard/lootboxes
-[2026-08-18 15:23:27] Authentication confirmed. On the lootbox page.
-[2026-08-18 15:23:27] Looking for crate button: 'button:has-text("Open Regular Crate")'
-[2026-08-18 15:23:27] Button found but DISABLED — crate is on cooldown. No action taken.
-[2026-08-18 15:23:27] Shutting down browser.
-[2026-08-18 15:23:27] Script execution completed.
-[2026-08-18 15:23:27] ========================================
-[2026-08-18 15:23:27] Script ended at: 2026-08-18 15:23:27
+[2026-08-18 17:20:30] Starting the crate claimer script...
+[2026-08-18 17:20:31] Injecting session cookie for authentication...
+[2026-08-18 17:20:31] Navigating to https://www.fentry.org/dashboard/lootboxes...
+[2026-08-18 17:20:32] Waiting for page to fully render (networkidle)...
+[2026-08-18 17:20:45] Current URL: https://www.fentry.org/dashboard/lootboxes
+[2026-08-18 17:20:45] Authentication confirmed. On the lootbox page.
+[2026-08-18 17:20:45] Looking for crate button: 'button:has-text("Open Regular Crate")'
+[2026-08-18 17:20:45] Button found but DISABLED — crate is on cooldown. No action taken.
+[2026-08-18 17:20:45] Shutting down browser.
+[2026-08-18 17:20:46] Script execution completed.
+[2026-08-18 17:20:46] ========================================
+[2026-08-18 17:20:46] Script ended at: 2026-08-18 17:20:46
