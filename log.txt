@@ -1,34 +1,33 @@
 === Crate Claimer Log ===
-Started: 2026-09-13 07:51:17
+Started: 2026-09-13 13:00:05
 ========================================
 
-[2026-09-13 07:51:17] Starting the crate claimer script...
-[2026-09-13 07:51:17] Injecting session cookie for authentication...
-[2026-09-13 07:51:17] Navigating to https://www.fentry.org/dashboard/lootboxes...
-[2026-09-13 07:51:18] Waiting for page to fully render (networkidle)...
-[2026-09-13 07:51:48] TIMEOUT: Could not find the crate button in time. The page layout may have changed.
-[2026-09-13 07:51:48] Detail: Timeout 30000ms exceeded.
+[2026-09-13 13:00:05] Starting the crate claimer script...
+[2026-09-13 13:00:07] Injecting session cookie for authentication...
+[2026-09-13 13:00:07] Navigating to https://www.fentry.org/dashboard/lootboxes...
+[2026-09-13 13:00:07] Waiting for page to fully render (networkidle)...
+[2026-09-13 13:00:37] TIMEOUT: Could not find the crate button in time. The page layout may have changed.
+[2026-09-13 13:00:37] Detail: Timeout 30000ms exceeded.
 =========================== logs ===========================
 "load" event fired
 ============================================================
-[2026-09-13 07:51:48] DEBUG — 14 buttons found on page:
-[2026-09-13 07:51:48]   [0] '' enabled=True
-[2026-09-13 07:51:48]   [1] 'brittojo7n' enabled=True
-[2026-09-13 07:51:48]   [2] '' enabled=True
-[2026-09-13 07:51:48]   [3] '' enabled=True
-[2026-09-13 07:51:48]   [4] 'Crates' enabled=True
-[2026-09-13 07:51:48]   [5] 'Fragments' enabled=True
-[2026-09-13 07:51:48]   [6] 'Inventory' enabled=True
-[2026-09-13 07:51:48]   [7] 'Stats' enabled=True
-[2026-09-13 07:51:48]   [8] 'Board' enabled=True
-[2026-09-13 07:51:48]   [9] '' enabled=True
-[2026-09-13 07:51:48]   [10] 'Regular' enabled=True
-[2026-09-13 07:51:48]   [11] 'Lifetime' enabled=False
-[2026-09-13 07:51:48]   [12] 'Open Regular Crate
-(31m 41s)' enabled=False
-[2026-09-13 07:51:48]   [13] 'Spend 25 frags' enabled=True
-[2026-09-13 07:51:48] Screenshot saved to error_screenshot.png
-[2026-09-13 07:51:48] Shutting down browser.
-[2026-09-13 07:51:48] Script execution completed.
-[2026-09-13 07:51:48] ========================================
-[2026-09-13 07:51:48] Script ended at: 2026-09-13 07:51:48
+[2026-09-13 13:00:37] DEBUG — 14 buttons found on page:
+[2026-09-13 13:00:37]   [0] '' enabled=True
+[2026-09-13 13:00:37]   [1] 'brittojo7n' enabled=True
+[2026-09-13 13:00:37]   [2] '' enabled=True
+[2026-09-13 13:00:37]   [3] '' enabled=True
+[2026-09-13 13:00:37]   [4] 'Crates' enabled=True
+[2026-09-13 13:00:37]   [5] 'Fragments' enabled=True
+[2026-09-13 13:00:37]   [6] 'Inventory' enabled=True
+[2026-09-13 13:00:37]   [7] 'Stats' enabled=True
+[2026-09-13 13:00:37]   [8] 'Board' enabled=True
+[2026-09-13 13:00:37]   [9] '' enabled=True
+[2026-09-13 13:00:37]   [10] 'Regular' enabled=True
+[2026-09-13 13:00:37]   [11] 'Lifetime' enabled=False
+[2026-09-13 13:00:37]   [12] 'Open Regular Crate' enabled=True
+[2026-09-13 13:00:37]   [13] 'Spend 25 frags' enabled=True
+[2026-09-13 13:00:37] Screenshot saved to error_screenshot.png
+[2026-09-13 13:00:37] Shutting down browser.
+[2026-09-13 13:00:37] Script execution completed.
+[2026-09-13 13:00:37] ========================================
+[2026-09-13 13:00:37] Script ended at: 2026-09-13 13:00:37
