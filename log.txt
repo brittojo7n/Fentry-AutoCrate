@@ -1,34 +1,16 @@
 === Crate Claimer Log ===
-Started: 2026-09-19 17:37:30
+Started: 2026-09-19 19:49:54
 ========================================
 
-[2026-09-19 17:37:30] Starting the crate claimer script...
-[2026-09-19 17:37:30] Injecting session cookie for authentication...
-[2026-09-19 17:37:30] Navigating to https://www.fentry.org/dashboard/lootboxes...
-[2026-09-19 17:37:30] Waiting for page to fully render (networkidle)...
-[2026-09-19 17:38:00] TIMEOUT: Could not find the crate button in time. The page layout may have changed.
-[2026-09-19 17:38:00] Detail: Timeout 30000ms exceeded.
-=========================== logs ===========================
-"load" event fired
-============================================================
-[2026-09-19 17:38:01] DEBUG — 14 buttons found on page:
-[2026-09-19 17:38:01]   [0] '' enabled=True
-[2026-09-19 17:38:01]   [1] 'brittojo7n' enabled=True
-[2026-09-19 17:38:01]   [2] '' enabled=True
-[2026-09-19 17:38:01]   [3] '' enabled=True
-[2026-09-19 17:38:01]   [4] 'Crates' enabled=True
-[2026-09-19 17:38:01]   [5] 'Fragments' enabled=True
-[2026-09-19 17:38:01]   [6] 'Inventory' enabled=True
-[2026-09-19 17:38:01]   [7] 'Stats' enabled=True
-[2026-09-19 17:38:01]   [8] 'Board' enabled=True
-[2026-09-19 17:38:01]   [9] '' enabled=True
-[2026-09-19 17:38:01]   [10] 'Regular' enabled=True
-[2026-09-19 17:38:01]   [11] 'Lifetime' enabled=False
-[2026-09-19 17:38:01]   [12] 'Open Regular Crate
-(2h 26m)' enabled=False
-[2026-09-19 17:38:01]   [13] 'Spend 25 frags' enabled=True
-[2026-09-19 17:38:01] Screenshot saved to error_screenshot.png
-[2026-09-19 17:38:01] Shutting down browser.
-[2026-09-19 17:38:01] Script execution completed.
-[2026-09-19 17:38:01] ========================================
-[2026-09-19 17:38:01] Script ended at: 2026-09-19 17:38:01
+[2026-09-19 19:49:54] Starting the crate claimer script...
+[2026-09-19 19:49:54] Injecting session cookie for authentication...
+[2026-09-19 19:49:54] Navigating to https://www.fentry.org/dashboard/lootboxes...
+[2026-09-19 19:49:55] Waiting for page to fully render (networkidle)...
+[2026-09-19 19:50:00] Current URL: https://www.fentry.org/dashboard/lootboxes
+[2026-09-19 19:50:00] Authentication confirmed. On the lootbox page.
+[2026-09-19 19:50:00] Looking for crate button: 'button:has-text("Open Regular Crate")'
+[2026-09-19 19:50:00] Button found but DISABLED — crate is on cooldown. No action taken.
+[2026-09-19 19:50:00] Shutting down browser.
+[2026-09-19 19:50:00] Script execution completed.
+[2026-09-19 19:50:00] ========================================
+[2026-09-19 19:50:00] Script ended at: 2026-09-19 19:50:00
