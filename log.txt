@@ -1,18 +1,18 @@
 === Crate Claimer Log ===
-Started: 2026-10-28 03:19:47
+Started: 2026-10-28 10:12:42
 ========================================
 
-[2026-10-28 03:19:47] Starting the crate claimer script...
-[2026-10-28 03:19:48] Injecting session cookie for authentication...
-[2026-10-28 03:19:48] Navigating to https://www.fentry.org/dashboard/lootboxes...
-[2026-10-28 03:19:49] Waiting for page to fully render (networkidle)...
-[2026-10-28 03:19:54] Current URL: https://www.fentry.org/dashboard/lootboxes
-[2026-10-28 03:19:54] Authentication confirmed. On the lootbox page.
-[2026-10-28 03:19:54] Looking for crate button: 'button:has-text("Open Regular Crate")'
-[2026-10-28 03:19:54] Button is ENABLED — clicking to claim crate...
-[2026-10-28 03:19:54] Crate claimed! Waiting for animation to complete...
-[2026-10-28 03:20:00] Done.
-[2026-10-28 03:20:00] Shutting down browser.
-[2026-10-28 03:20:00] Script execution completed.
-[2026-10-28 03:20:00] ========================================
-[2026-10-28 03:20:00] Script ended at: 2026-10-28 03:20:00
+[2026-10-28 10:12:42] Starting the crate claimer script...
+[2026-10-28 10:12:42] Injecting session cookie for authentication...
+[2026-10-28 10:12:42] Navigating to https://www.fentry.org/dashboard/lootboxes...
+[2026-10-28 10:13:12] TIMEOUT: Could not find the crate button in time. The page layout may have changed.
+[2026-10-28 10:13:12] Detail: Page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.fentry.org/dashboard/lootboxes", waiting until "domcontentloaded"
+
+[2026-10-28 10:13:12] DEBUG — 0 buttons found on page:
+[2026-10-28 10:13:24] Screenshot saved to error_screenshot.png
+[2026-10-28 10:13:24] Shutting down browser.
+[2026-10-28 10:13:24] Script execution completed.
+[2026-10-28 10:13:24] ========================================
+[2026-10-28 10:13:24] Script ended at: 2026-10-28 10:13:24
