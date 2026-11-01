@@ -3,7 +3,7 @@ name: Auto Crate
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '17 * * * *'
 
 jobs:
   claim-crate:
@@ -34,7 +34,7 @@ jobs:
           path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
-            ${{ runner.os }}-playwright-
+            ${{ runner.os }}-pip-
 
       - name: Install dependencies
         run: pip install -r requirements.txt
