@@ -1,16 +1,33 @@
 === Crate Claimer Log ===
-Started: 2026-11-02 02:35:36
+Started: 2026-11-02 11:23:42
 ========================================
 
-[2026-11-02 02:35:36] Starting the crate claimer script...
-[2026-11-02 02:35:37] Injecting session cookie for authentication...
-[2026-11-02 02:35:37] Navigating to https://www.fentry.org/dashboard/lootboxes...
-[2026-11-02 02:35:37] Waiting for page to fully render (networkidle)...
-[2026-11-02 02:35:43] Current URL: https://www.fentry.org/dashboard/lootboxes
-[2026-11-02 02:35:43] Authentication confirmed. On the lootbox page.
-[2026-11-02 02:35:43] Looking for crate button: 'button:has-text("Open Regular Crate")'
-[2026-11-02 02:35:43] Button found but DISABLED — crate is on cooldown. No action taken.
-[2026-11-02 02:35:43] Shutting down browser.
-[2026-11-02 02:35:43] Script execution completed.
-[2026-11-02 02:35:43] ========================================
-[2026-11-02 02:35:43] Script ended at: 2026-11-02 02:35:43
+[2026-11-02 11:23:42] Starting the crate claimer script...
+[2026-11-02 11:23:42] Injecting session cookie for authentication...
+[2026-11-02 11:23:42] Navigating to https://www.fentry.org/dashboard/lootboxes...
+[2026-11-02 11:23:43] Waiting for page to fully render (networkidle)...
+[2026-11-02 11:24:13] TIMEOUT: Could not find the crate button in time. The page layout may have changed.
+[2026-11-02 11:24:13] Detail: Timeout 30000ms exceeded.
+=========================== logs ===========================
+"load" event fired
+============================================================
+[2026-11-02 11:24:13] DEBUG — 14 buttons found on page:
+[2026-11-02 11:24:13]   [0] '' enabled=True
+[2026-11-02 11:24:13]   [1] 'brittojo7n' enabled=True
+[2026-11-02 11:24:13]   [2] '' enabled=True
+[2026-11-02 11:24:13]   [3] '' enabled=True
+[2026-11-02 11:24:13]   [4] 'Crates' enabled=True
+[2026-11-02 11:24:13]   [5] 'Fragments' enabled=True
+[2026-11-02 11:24:13]   [6] 'Inventory' enabled=True
+[2026-11-02 11:24:13]   [7] 'Stats' enabled=True
+[2026-11-02 11:24:13]   [8] 'Board' enabled=True
+[2026-11-02 11:24:13]   [9] '' enabled=True
+[2026-11-02 11:24:13]   [10] 'Regular' enabled=True
+[2026-11-02 11:24:13]   [11] 'Lifetime' enabled=False
+[2026-11-02 11:24:13]   [12] 'Open Regular Crate' enabled=True
+[2026-11-02 11:24:13]   [13] 'Spend 25 frags' enabled=True
+[2026-11-02 11:24:13] Screenshot saved to error_screenshot.png
+[2026-11-02 11:24:13] Shutting down browser.
+[2026-11-02 11:24:13] Script execution completed.
+[2026-11-02 11:24:13] ========================================
+[2026-11-02 11:24:13] Script ended at: 2026-11-02 11:24:13
